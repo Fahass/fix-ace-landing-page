@@ -1,0 +1,556 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem 2rem;
+    font-family: tahoma;
+    box-shadow: 1px 2px 5px #316d85;
+    z-index: 100;
+    background-color: #d9edf8;
+    margin-top: -0.5rem;
+    overflow-x: hidden;
+}
+
+.nav_lines{
+    position: absolute;
+    top: 2rem;
+    right: 1.2rem;
+    height: 25px;
+    width: 35px;
+    display: none;
+    
+}
+.nav_lines #line1,#line2,#line3{
+    background-color: #000;
+    height: 4px;
+    width: 100%;
+    margin: .2rem 0;
+    border-radius: .3rem;
+}
+
+.logo{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+span{
+    color: #328aad;
+    text-decoration: underline;
+}
+.links ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin-right: 4rem;
+}
+.links ul a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 1rem;
+    color: #000;
+    transition: all .3s;
+    font-family: tahoma;
+}
+.links ul a:hover{
+    border-bottom: 2px solid #316d85;
+}
+.underLinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    margin-right: 4rem;
+}
+
+/* ------------------------HomePage----------------------------------- */
+
+.first{
+    padding: 10rem 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    height: 100vh;
+}
+.first img{
+    height: 350px;
+    width: 400px;
+    border-radius: .5rem;
+}
+.first .note h1{
+    font-size: 3rem;
+    font-family: tahoma;
+    font-weight: 700;
+}
+.first .note p{
+    font-size: 1.3rem;
+    margin: .5rem 0;
+    font-family: sans-serif;
+}
+.first .note button{
+    margin: 1.5rem 0;
+    height: 40px;
+    width: 150px;
+    border: 1px solid #81a5cc;
+    border-radius: .7rem;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    background-color: rgb(194, 222, 238);
+    padding: .5rem;
+    transition: all .3s;
+    /* backface-visibility: hidden; */
+}
+.first .note button:hover{
+    transform: scale(1.058);
+}
+
+/* --------------------------AboutPage--------------------------------- */
+
+.second{
+    height: 100vh;
+    padding: 8rem 2rem;
+    background-color: rgb(209, 236, 250);
+}
+.heading{
+    text-align: center;
+    padding: 0 2rem;
+}
+.heading h1{
+    font-size: 2rem;
+    font-family: tahoma;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.heading p{
+    font-family: sans-serif;
+    font-size: 1.08rem;
+    margin: 1rem 0;
+}
+.sub-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 1rem;
+}
+.mission,.vision{
+    margin: 2rem;
+}
+.mission h2,.vision h2{
+    font-size: 1.6rem;
+    font-family: tahoma;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+.mission p,.vision p{
+    font-size: 1.2rem;
+}
+
+/* -----------------------------ServicesPage------------------------------ */
+
+.third{
+    padding: 7rem 2rem;
+    height: 100vh;
+}
+.third h1{
+    text-align: center;
+    font-size: 2rem;
+    font-family: tahoma;
+    font-weight: 700;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+.third p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: tahoma;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 2;
+    color: #163c4b;
+}
+.third .pics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 2rem 0;
+}
+.third .pics img{
+    border: 2px solid #328aad;
+    border-radius: .5rem;
+    height: 280px;
+    width: 300px;
+    padding: .5rem;
+    margin-top: .4rem;
+    transition: .3s;
+}
+.third .pics img:hover{
+    transform: perspective(1300px) rotateX(12deg);
+}
+.third .pics button{
+    margin-bottom: 1rem;
+    height: 30px;
+    width: 120px;
+    background-color: rgb(194, 220, 233);
+    border: 2px solid #4279b4;
+    border-radius: .7rem;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    transition: all .3s;
+}
+.third .pics button:hover{
+    transform: scale(1.058);
+    background-color: rgb(184, 210, 223);
+}
+
+/* ------------------------ContactPage----------------------------------- */
+
+.last{
+    background-color: rgb(209, 236, 250);
+    height: 35vh;
+    overflow: hidden;
+}
+.last h1{
+    text-align: center;
+    font-size: 2rem;
+    font-family: tahoma;
+    font-weight: 700;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    padding: 2rem;
+}
+.last .platforms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.last .platforms p,a{
+    margin-left: 1.2rem;
+    font-size: 1.5rem;
+    font-family: monospace;
+    font-weight: 700;
+}
+.last .platforms p{
+    margin-right: 2.5rem;
+    align-self: flex-start;
+    cursor: default;
+    text-transform: capitalize;
+}
+.last .platforms a{
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #328aad;
+    border-radius: 50%;
+    width: 35px;
+    padding: .1rem .3rem;
+    transition: all .3s;
+}
+.last .platforms a:hover{
+    transform: scale(1.165);
+    background-color: #6f989b;
+}
+.dt{
+    padding: .5rem 2rem;
+    font-family: arial;
+    font-weight: 500;
+}
+.wm{
+    text-align: center;
+    font-family: verdana;
+    font-weight: 500;
+    margin-top: 1.2rem;
+}
+
+/* ---------------------------MediaQuery-------------------------------- */
+@media (max-width: 1115px){
+    .navbar{
+        padding: 1rem 1.5rem;
+    }
+    .logo{
+        font-size: 1.4rem;
+    }
+    .underLinks{
+        gap: 45px;
+        margin-right: 1rem;
+        justify-content: center;
+    }
+    .links ul{
+        margin-right: 1rem;
+    }
+    .links ul a{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: .7rem;
+    }
+    .tel{
+        font-size: .9rem;
+    }
+
+    .first{
+        flex-direction: column;
+        height: auto;
+    }
+    .note h1{
+        font-size: 2rem;
+    }
+    .second{
+        height: auto;
+    }
+    .third{
+        height: auto;
+    }
+
+}
+
+@media (max-width: 964px){
+    .navbar{
+        padding: 1rem 1.5rem;
+    }
+    .logo{
+        font-size: 1.3rem;
+    }
+    .underLinks{
+        gap: 40px;
+        margin-right: 1rem;
+        justify-content: center;
+    }
+    .links ul{
+        margin-right: 1rem;
+    }
+    .links ul a{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: .7rem;
+    }
+    .tel{
+        font-size: .8rem;
+    }
+
+    .first{
+        flex-direction: column;
+        height: auto;
+    }
+    .note h1{
+        font-size: 2rem;
+    }
+    .second{
+        height: auto;
+    }
+    .third{
+        height: auto;
+    }
+
+}
+
+@media (max-width: 927px){
+    .navbar{
+        padding: 1rem 1.5rem;
+    }
+    .logo{
+        font-size: 1.2rem;
+    }
+    .underLinks{
+        gap: 35px;
+        margin-right: -1rem;
+        justify-content: center;
+    }
+    .links ul{
+        margin-right: -1rem;
+    }
+    .links ul a{
+        font-size: 1rem;
+        font-weight: 600;
+        margin: .5rem;
+    }
+    .tel{
+        font-size: .7rem;
+    }
+
+    .first{
+        flex-direction: column;
+        height: auto;
+    }
+    .note h1{
+        font-size: 2rem;
+    }
+    .second{
+        height: auto;
+    }
+    .third{
+        height: auto;
+    }
+
+}
+
+@media (max-width: 750px){
+    .navbar{
+        flex-direction: column;
+        padding: 1.5rem;
+        margin-top: -0.4rem;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .links ul a{
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: tahoma;
+    }
+    .links{
+        line-height: 3;
+    }
+    .links ul{
+        flex-direction: column;
+        padding: .6rem 0;
+        align-items: center;
+        justify-content: center;
+        font-family: tahoma;
+    }
+    .underLinks{
+        display: none;
+        margin-right: 0;
+    }
+    .tel{
+        font-size: .7rem;
+    }
+    .first{
+        flex-direction: column;
+        height: auto;
+    }
+    .note h1{
+        font-size: 2.5rem;
+    }
+    .second{
+        height: auto;
+    }
+    .third{
+        height: auto;
+    }
+    .last{
+        height: auto;
+    }
+    .last .platforms{
+        flex-direction: column;
+        line-height: 2;
+    }
+    .nav_lines{
+        display: block;
+    }
+    .active.underLinks{
+        display: block;
+    }
+    .active#line1{
+        transform: rotate(45deg) translateY(10px);
+        background-color: rgb(206, 106, 70);
+        transition: .5s;
+    }
+    .active#line2{
+        opacity: 0;
+        transition: .5s;
+    }
+    .active#line3{
+        transform: rotate(-45deg) translateY(-10px);
+        background-color: rgb(206, 106, 70);
+        transition: .5s;
+    }
+
+}
+
+@media (max-width: 550px){
+    .navbar{
+        flex-direction: column;
+    }
+    .logo{
+        font-size: 1.6rem;
+    }
+    .tel{
+        font-size: .8rem;
+    }
+    .links{
+        line-height: 3;
+    }
+    .links ul{
+        flex-direction: column;
+        padding: .6rem 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .links ul a{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .underLinks{
+        display: none;
+        margin-right: 0;
+    }
+    .nav_lines{
+        display: block;
+    }
+    .first{
+        padding-top: 10rem;
+        height: auto;
+        place-content: center;
+        overflow-x: hidden;
+    }
+    .first .note{
+        width: 300px;
+        padding: .5rem;
+    }
+    .first img{
+        width: 350px;
+    }
+    .second{
+        padding: 6rem .8rem;
+    }
+    .sub-heading{
+        flex-direction: column;
+    }
+    .last{
+        flex-direction: column;
+        padding: .5rem;
+        height: auto;
+    }
+    .last .platforms{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 2;
+        text-align: center;
+        padding: .5rem;
+    }
+    .active.underLinks{
+        display: block;
+    }
+    .active#line1{
+        transform: rotate(45deg) translateY(10px);
+        background-color: rgb(206, 106, 70);
+    }
+    .active#line2{
+        opacity: 0;
+    }
+    .active#line3{
+        transform: rotate(-45deg) translateY(-10px);
+        background-color: rgb(206, 106, 70);
+    }
+}
+@media (max-width: 320px){
+    .first img{
+        height: 320px;
+        width: 305px;
+    }
+}
