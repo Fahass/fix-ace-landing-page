@@ -27,7 +27,6 @@
     height: 25px;
     width: 35px;
     display: none;
-    
 }
 .nav_lines #line1,#line2,#line3{
     background-color: #000;
@@ -35,6 +34,8 @@
     width: 100%;
     margin: .2rem 0;
     border-radius: .3rem;
+    transition: .5s;
+    cursor: pointer;
 }
 
 .logo{
@@ -251,18 +252,23 @@ span{
     cursor: default;
     text-transform: capitalize;
 }
-.last .platforms a{
+.last .platforms a img{
     text-decoration: none;
     color: #000;
-    border: 2px solid #328aad;
+    /* border: 2px solid #328aad; */
     border-radius: 50%;
-    width: 35px;
+    width: 45px;
+    height: 40px;
     padding: .1rem .3rem;
     transition: all .3s;
 }
-.last .platforms a:hover{
+#twitter{
+    width: 55px;
+    height: 47px;
+}
+.last .platforms a img:hover{
     transform: scale(1.165);
-    background-color: #6f989b;
+    background-color: #fefefa;
 }
 .dt{
     padding: .5rem 2rem;
@@ -424,6 +430,7 @@ span{
     .underLinks{
         display: none;
         margin-right: 0;
+        transition: .5s;
     }
     .tel{
         font-size: .7rem;
@@ -453,6 +460,7 @@ span{
     }
     .active.underLinks{
         display: block;
+        transition: .5s;
     }
     .active#line1{
         transform: rotate(45deg) translateY(10px);
@@ -548,6 +556,7 @@ span{
         background-color: rgb(206, 106, 70);
     }
 }
+
 @media (max-width: 320px){
     .first img{
         height: 320px;
